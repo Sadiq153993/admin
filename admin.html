@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xəbərçi - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="admin">
+
+        <div class="sidebar">
+            <h2>Admin Panel</h2>
+            <a href="#" onclick="showList()">
+                <i class="fa-solid fa-newspaper"></i> Xəbərlər
+            </a>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i> Sayta keç
+            </a>
+        </div>
+
+        <div class="content">
+
+            <div class="top">
+                <h2>Xəbərlərin idarə edilməsi</h2>
+                <div class="profile">
+                    <span>Admin</span>
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+            </div>
+
+            <div id="listPage">
+                <div class="list-header">
+                    <h2>Xəbərlər</h2>
+                    <button onclick="showForm()">+ Əlavə et</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>AD</th>
+                            <th>TARİX</th>
+                            <th>QƏLƏM</th>
+                            <th>SİL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="newsTable"></tbody>
+                </table>
+            </div>
+
+            <div id="formPage">
+                <h2 id="formTitle">Yeni xəbər əlavə et</h2>
+
+                <form id="newsForm">
+                    <input type="hidden" id="newsId">
+
+                    <label>Xəbərin adı</label>
+                    <input type="text" id="title" required>
+
+                    <label>Xəbərin mətni</label>
+                    <textarea id="description" rows="5" required></textarea>
+
+                    <label>Şəklin linki</label>
+                    <input type="url" id="image" placeholder="https://..." required>
+
+                    <label>Kateqoriya</label>
+                    <select id="category">
+                        <option>Ölkə</option>
+                        <option>Siyasət</option>
+                        <option>İdman</option>
+                        <option>Şou Biznes</option>
+                        <option>Mədəniyyət</option>
+                        <option>İqtisadiyyat</option>
+                        <option>Dünya</option>
+                        <option>Hadisə</option>
+                        <option>Texnologiya</option>
+                        <option>Təhsil</option>
+                        <option>Gündəm</option>
+                        <option>Sağlamlıq</option>
+                        <option>Maraqlı</option>
+                    </select>
+
+                    <button type="submit">Yadda saxla</button>
+                    <button type="button" class="cancel" onclick="showList()">Geri qayıt</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

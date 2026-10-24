@@ -1,0 +1,444 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #17191f;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-bar {
+    background-color: #111318;
+    color: white;
+}
+
+.top-content {
+    width: 1350px;
+    max-width: 95%;
+    margin: auto;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.top-links {
+    display: flex;
+    gap: 20px;
+}
+
+.top-links a:hover {
+    color: #e00024;
+}
+
+header {
+    background-color: white;
+}
+
+.header-content {
+    width: 1350px;
+    max-width: 95%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #c90016;
+    font-size: 38px;
+}
+
+.logo p {
+    color: gray;
+    text-align: right;
+    font-size: 13px;
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search-box input {
+    width: 250px;
+    padding: 14px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box button {
+    padding: 0 17px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+nav {
+    background-color: white;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-content {
+    width: 1350px;
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-content a {
+    padding: 20px 10px;
+    font-size: 15px;
+}
+
+.nav-content a:hover {
+    color: #d00020;
+}
+
+.nav-content .active {
+    color: #d00020;
+    border-bottom: 3px solid #d00020;
+}
+
+.main-content {
+    width: 1350px;
+    max-width: 95%;
+    margin: 20px auto;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.main-news {
+    width: 42%;
+}
+
+.big-news {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px #ddd;
+}
+
+.big-news-image {
+    height: 320px;
+    position: relative;
+    background-color: #096746;
+    color: white;
+}
+
+.big-news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.65);
+}
+
+.image-category {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.big-news-image h2 {
+    position: absolute;
+    top: 90px;
+    left: 15px;
+    font-size: 35px;
+}
+
+.image-bottom {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.big-news-info {
+    padding: 20px;
+}
+
+.category {
+    color: #d00020;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.big-news-info h2 {
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.big-news-info p {
+    margin-top: 15px;
+    color: #626773;
+    line-height: 1.7;
+}
+
+.big-news-info a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d00020;
+}
+
+.middle-news {
+    width: 26%;
+}
+
+.news-card {
+    background-color: white;
+    display: flex;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px #ddd;
+    min-height: 140px;
+}
+
+.news-card img {
+    width: 40%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.news-text {
+    width: 60%;
+    padding: 12px;
+}
+
+.news-text h3 {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.sidebar {
+    width: 30%;
+    margin-left: auto;
+}
+
+.advertisement {
+    margin-bottom: 20px;
+}
+
+.advertisement img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.sports-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 4px #ddd;
+}
+
+.sports-section h2 {
+    font-size: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #222;
+}
+
+.sport-card {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.sport-card img {
+    width: 115px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.sport-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.latest-news {
+    width: 1350px;
+    max-width: 95%;
+    margin: 40px auto;
+}
+
+.latest-news h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.latest-news-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.latest-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.latest-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.latest-card span {
+    display: block;
+    color: #d00020;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.latest-card h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0 15px;
+}
+
+.latest-card p {
+    color: gray;
+    font-size: 12px;
+    margin: 15px;
+}
+
+footer {
+    background-color: #111318;
+    color: white;
+    padding: 35px 0 15px;
+}
+
+.footer-content {
+    width: 1350px;
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content h2 {
+    color: #e00024;
+}
+
+.footer-content p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        flex-wrap: wrap;
+    }
+
+    .main-news {
+        width: 58%;
+    }
+
+    .middle-news {
+        width: 39%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .latest-news-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .top-content {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header-content {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .nav-content {
+        justify-content: flex-start;
+    }
+
+    .main-news {
+        width: 100%;
+    }
+
+    .middle-news {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .big-news-info h2 {
+        font-size: 23px;
+    }
+
+    .big-news-image h2 {
+        font-size: 27px;
+    }
+
+    .latest-news-list {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

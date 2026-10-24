@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xəbərçi - Son Xəbərlər</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-content">
+            <p>24 Oktyabr 2026, Şənbə</p>
+
+           
+        <div class="top-links">
+            <a href="#">Arxiv</a>
+            <a href="#">Biz kimik</a>
+            <a href="#">Əlaqə</a>
+            <a href="#">RSS</a>
+            <a href="admin.html">
+                <i class="fa-solid fa-user-gear"></i> Admin panel
+            </a>
+        </div>
+
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>XƏBƏRÇİ</h1>
+                <p>xeberci.com</p>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Xəbər axtar...">
+                <button onclick="searchNews()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="active">Ana səhifə</a>
+            <a href="#">Siyasət</a>
+            <a href="#">İdman</a>
+            <a href="#">Şou Biznes</a>
+            <a href="#">Mədəniyyət</a>
+            <a href="#">İqtisadiyyat</a>
+            <a href="#">Dünya</a>
+            <a href="#">Hadisə</a>
+            <a href="#">Texnologiya</a>
+            <a href="#">Təhsil</a>
+            <a href="#">Ölkə</a>
+            <a href="#">Gündəm</a>
+            <a href="#">Sağlamlıq</a>
+            <a href="#">Maraqlı</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <section class="main-news">
+            <div class="big-news">
+
+                <div class="big-news-image">
+                    <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=900" alt="Yaşlı valideynə qulluq">
+
+                    <span class="image-category">ÖLKƏ</span>
+                    <h2>Yaşlı valideynə qulluq</h2>
+
+                    <div class="image-bottom">
+                        <span>xeberci.com</span>
+                        <span>Xəbərçi · 2026</span>
+                    </div>
+                </div>
+
+                <div class="big-news-info">
+                    <span class="category">ÖLKƏ</span>
+
+                    <h2>
+                        Yaşlı valideynə qulluq: evdə sosial xidmət,
+                        qocalar evi, ödənişlər və ailənin hüquqları
+                    </h2>
+
+                    <p>
+                        Yaşlı valideynə evdə sosial xidmət və dövlət
+                        internat evinə yerləşdirmə üçün Sosial
+                        Xidmətlər Agentliyinə, DOST mərkəzinə
+                        və ya 142-yə müraciət edilir.
+                    </p>
+
+                    <a href="#">Ətraflı oxu →</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="middle-news" id="newsList">
+
+            <p>Xəbərlər yüklənir...</p>
+        </section>
+
+        <aside class="sidebar">
+
+            <div class="advertisement">
+                <a href="#">
+                    <img src="https://placehold.co/500x350/17213c/ffff00?text=www.oyun.az" alt="Oyun.az reklamı">
+                </a>
+            </div>
+
+            <div class="sports-section">
+                <h2>İdman</h2>
+
+                <div class="sports-news">
+
+                    <div class="sport-card">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=300" alt="Futbol">
+                        <p>Premyer Liqada IX tur başlayır: “Sabah” – “Qarabağ” matçını Rəşad Əhmədov idarə edəcək</p>
+                    </div>
+
+                    <div class="sport-card">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=300" alt="Güləş">
+                        <p>Astanada güləş üzrə dünya çempionatı: Azərbaycan 23 güləşçi ilə təmsil ediləcək</p>
+                    </div>
+
+                    <div class="sport-card">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=300" alt="İdman yarışı">
+                        <p>Azərbaycan idmançılarının beynəlxalq yarışlarda son nəticələri açıqlanıb</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <section class="latest-news">
+        <h2>Son xəbərlər</h2>
+
+         <div class="latest-news-list" id="latestNewsList">
+            <p>Xəbərlər yüklənir...</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>XƏBƏRÇİ</h2>
+                <p>Ən son xəbərlər bir ünvanda</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Ana səhifə</a>
+                <a href="#">Haqqımızda</a>
+                <a href="#">Əlaqə</a>
+                <a href="#">Arxiv</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Xəbərçi. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
